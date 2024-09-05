@@ -1,5 +1,7 @@
 package com.ohgiraffers.practice.array;
 
+import java.util.Scanner;
+
 public class Application2 {
 
     public static void main(String[] args) {
