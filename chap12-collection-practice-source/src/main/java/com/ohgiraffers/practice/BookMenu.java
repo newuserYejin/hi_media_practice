@@ -126,8 +126,10 @@ public class BookMenu {
         System.out.println("3. 책 제목으로 오름차순 정렬");
         System.out.println("4. 책 제목으로 내림차순 정렬");
 
-        System.out.print("원하시는 정렬 방법을 선택해주세요: ");
+        System.out.print("\n원하시는 정렬 방법을 선택해주세요: ");
         int type = sc.nextInt();
+
+        System.out.println("");
 
         return bm.sortedBookList(type);
     }

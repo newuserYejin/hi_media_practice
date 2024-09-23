@@ -8,6 +8,6 @@ public class DescBookTItle implements Comparator<BookDTO> {
 
     @Override
     public int compare(BookDTO o1, BookDTO o2) {
-        return 0;
+        return o1.getTitle().compareTo(o2.getTitle());
     }
 }

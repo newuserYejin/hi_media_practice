@@ -8,6 +8,8 @@ public class DescBookNo implements Comparator<BookDTO> {
 
     @Override
     public int compare(BookDTO o1, BookDTO o2) {
-        return 0;
+        
+        // 내림차순 정렬
+        return Integer.compare(o2.getbNo(),o1.getbNo());
     }
 }

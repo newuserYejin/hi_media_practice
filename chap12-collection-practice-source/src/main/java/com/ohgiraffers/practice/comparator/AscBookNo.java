@@ -7,7 +7,6 @@ public class AscBookNo implements Comparator<BookDTO> {
 
     @Override
     public int compare(BookDTO o1, BookDTO o2) {
-
-        return 0;
+        return Integer.compare(o1.getbNo(),o2.getbNo());
     }
 }

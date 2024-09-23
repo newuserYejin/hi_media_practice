@@ -1,5 +1,8 @@
 package com.ohgiraffers.practice;
 
+import com.ohgiraffers.practice.comparator.AscBookNo;
+import com.ohgiraffers.practice.comparator.DescBookNo;
+
 import java.util.*;
 
 public class BookManager {
@@ -88,19 +91,23 @@ public class BookManager {
 
         switch (type){
             case 1:
-                break;
+                Collections.sort(booklist,new AscBookNo());
+                return booklist;
             case 2:
-                break;
+                Collections.sort(booklist,new DescBookNo());
+                return booklist;
             case 3:
-                break;
+                return booklist;
             case 4:
-                break;
+                return booklist;
         }
-
+        return booklist;
     }
 
     public void printBookList(List<BookDTO> printList){
-
+        for (BookDTO book : printList){
+            System.out.println(book);
+        }
     }
 
 }
